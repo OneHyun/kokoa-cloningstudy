@@ -6,6 +6,8 @@
     padding: 20px 40px;
     box-sizing: border-box;
     border-top: 1px solid rgba(121, 121, 121, 0.2);
+
+    font-family: "NanumPen";
 }
 
 .navi__list {
@@ -29,9 +31,10 @@
     font-weight: bold;
     color: white;
 
+    font-size: 24px;
     position: absolute;
-    left: 20px;
-    bottom: 15px;
+    left: 15px;
+    bottom: 13px;
 }
 
 .navi__point{

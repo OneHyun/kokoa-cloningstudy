@@ -7,8 +7,24 @@
     <title>KoKoa - Welcome Page</title>
     <link rel="stylesheet" href="css/style.css"/>
     
+    <!-- sound -->
+    <audio id='audio_play' src='./resource/dig/dig_mainbgm.mp3'></audio> 
+    <script type="text/javascript"> 
+    function playMusic() { 
+    var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+    } 
+} 
+</script>
+
 </head>
 <body>
+    <div>
+        <img src="./resource/dig/dig_loginpage_bg.png" draggable="false" class="loginbg"/>
+    </div>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -27,15 +43,17 @@
         </div>
     </div>
     <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+        <h1 class="welcome-header__title">
+            <input type="image" src="./resource/dig/dig_digivice.png" onclick="playMusic()" class="welcome-header__audiobtn"/>
+            Welcome to Digital World</h1>
         <p class="welcome-header__text">
-            If you have a Kokoa Account, log in with your email or phone number.
+            If you have a Digivice Account, login with your email or phone number.
         </p>
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="E-mail or Phone number"/>
-        <input name="password" type="password" placeholder="Password"/>
+    <form action="friends.html" id="login-form">
+        <input type="text" placeholder="E-mail or Phone number"/>
+        <input type="password" placeholder="Password"/>
         <input type="submit" value="Log In"/>
         <a href="#">Find Kokoa Account of Password</a>
     </form>

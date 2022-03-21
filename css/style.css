@@ -1,4 +1,8 @@
+/* Fonts */
 @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+/* Reset & Variables */
 @import "reset.css";
 @import "variables.css";
 
@@ -6,11 +10,15 @@
 @import "components/status-bar.css";
 @import "components/navi-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
-    font-family: "NanumPen";
-    font-size: 24px;
+    font-family: "jua";
+    font-size: 20px;
+    color: #2e363e; 
+    overflow: hidden;
   }
