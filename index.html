@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKoa - Welcome Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--To Do : Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span id="clock">18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <!-- Battery Icon-->
+            <i class="fas fa-bolt"></i>
+            <!-- Lightning Icon-->
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+        <p class="welcome-header__text">
+            If you have a Kokoa Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="E-mail or Phone number"/>
+        <input name="password" type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <a href="#">Find Kokoa Account of Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+         crossorigin="anonymous">
+   </script>
+   <script>
+       const clock = document.getElementById("clock");
+       function printTime()
+       {
+           const now = new Date();
+           const nowTime = String(now.getHours()).padStart(2,"0") 
+           + ":" + String(now.getMinutes()).padStart(2,"0");
+           clock.innerHTML = nowTime;
+       }
+       printTime();
+       setInterval(printTime, 1000);
+   </script>
+</body>
+</html>
