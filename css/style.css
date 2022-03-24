@@ -11,15 +11,21 @@
 @import "components/navi-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+@import "components/anime-component.css";
+@import "components/search-bar.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chats.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: "jua";
     font-size: 20px;
     color: #2e363e; 
-    overflow: hidden;
   }

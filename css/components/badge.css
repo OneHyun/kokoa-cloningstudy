@@ -1,0 +1,14 @@
+.badge{
+    background-color: tomato;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+
+    font-size: 24px;
+    font-family: "NanumPen";
+}

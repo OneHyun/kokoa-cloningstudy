@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoa - Series Library Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="animscreen-header">
+        <i class="fas fa-list"></i>
+        <div class="screen-header__title">Digimon Library</div>
+        <i class="fas fa-shopping-basket"></i>
+    </div>
+    <form class="search-bar">
+        <input type="text" class="search-bar__bookname" placeholder="search books..."/>
+    </form>
+
+    <main class="anime-list">
+        <div class="anime-list__todaybook">
+            <span class="anime-list__category">Anime of the day</span>
+            <div class="anime-component">
+                <div class="anime-component__column">
+                    <img class="anime-component__cover" src="./resource/dig/dig_adventure.png"/>
+                </div>
+                <div class="anime-component__column anime-component__column--info">
+                    <span>Digimon Adventure</span>
+                    <span>Butter-fly</span>
+                    <div class="anime-component__score">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="anime-component__category">
+                        <span>Bildungsroman</span>
+                        <span>Adventure</span>
+                    </div>
+                    <div class="anime-component__btns">
+                        <button>
+                            <i class="fas fa-bookmark fa-2x"></i>
+                        </button>
+                        <button>Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-list__top--rates">
+            <span class="anime-list__category">Top Series</span>
+            <div class="anime-component anime-component--not-selected">
+                <div class="anime-component__column">
+                    <img class="anime-component__cover anime-component_cover--sm" src="./resource/dig/dig_power.png"/>
+                    <div class="anime-component__score anime-component__score--recommend">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="anime-component__column">
+                    <img class="anime-component__cover anime-component_cover--sm" src="./resource/dig/dig_tamers.png"/>
+                    <div class="anime-component__score anime-component__score--recommend">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="anime-component__column">
+                    <img class="anime-component__cover anime-component_cover--sm" src="./resource/dig/dig_frontier.png"/>
+                    <div class="anime-component__score anime-component__score--recommend">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="anime-component__column">
+                    <img class="anime-component__cover anime-component_cover--sm" src="./resource/dig/dig_savers.png"/>
+                    <div class="anime-component__score anime-component__score--recommend">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="anime-component__column">
+                    <img class="anime-component__cover anime-component_cover--sm" src="./resource/dig/dig_crosswars.png"/>
+                    <div class="anime-component__score anime-component__score--recommend">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-list__music">
+            <span class="anime-list__category">Representative song</span>
+            <div class="anime-component">
+                <div class="anime-component__column">
+                    <img class="anime-component__cover" src="./resource/dig/dig_butter-fly.png"/>
+                </div>
+                <div class="anime-component__column anime-component__column--info">
+                    <span>Butter-fly</span>
+                    <span id="ost-info">Digimon Adventure's opening song released in 1999. 
+                        It's the first opening song of the Digimon series, the ending song of the last scene of the series, and 16 years later, 
+                        it's the theme song of Digimon Adventure tri. It's truly the beginning and end of Digimon.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+         crossorigin="anonymous">
+   </script>
+</body>
+</html>
