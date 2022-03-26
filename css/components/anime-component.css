@@ -1,5 +1,5 @@
 .animscreen-header{
-    background-color: rgb(255, 206, 51);
+    background: var(--theme-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,22 @@
 .anime-component--not-selected{
     overflow-x: auto;
     overflow-y:hidden;
+    padding-bottom: 5px;
 }
+.anime-component--not-selected::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+  }
+.anime-component--not-selected::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 5px;
+  }
+.anime-component--not-selected::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
 .anime-component__cover{
     width: 200px;
     height: 320px;
@@ -136,4 +151,9 @@
     margin-top: 20px;
     font-size: 22px;
     line-height: 23px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
 }

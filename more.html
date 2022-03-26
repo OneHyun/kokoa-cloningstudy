@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KoKoa - Chats Page</title>
+    <title>KoKoa - More Page</title>
     <link rel="stylesheet" href="css/style.css"/>
     
 </head>
@@ -28,45 +28,15 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
+        <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="far fa-comment-dots fa-lg"></i></span>
             <span><i class="fas fa-cog fa-lg"></i></span>
         </div>
     </header>
 
     <main class="main-screen">
-
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="resource/dig/avatar_icon/dig_agumon_small.png"
-                    class="user-component__avatar"/>
-                <div class="user-component__text">
-                <h4 class="user-component__title">아구몬</h4>
-                <h6 class="user-component__subtitle">태일아 ! 진화하자</h6>
-                </div>
-            </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <span class="badge">10</span>
-            </div>
-        </div>
-
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="resource/dig/avatar_icon/dig_gabumon_small.png"
-                    class="user-component__avatar"/>
-                <div class="user-component__text">
-                <h4 class="user-component__title">파피몬</h4>
-                <h6 class="user-component__subtitle">있잖아, 내일은 어떻게 할거야?</h6>
-                </div>
-            </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <span class="badge">10</span>
-            </div>
-        </div>
+        
     </main>
 
    <nav class="navi">
@@ -78,7 +48,8 @@
             </li>
            <li class="navi__btn">
                <a class="navi__link" href="chats.html">
-                   <i class="fas fa-comment fa-lg"></i>
+                   <span class="navi__notification badge">10</span>
+                   <i class="far fa-comment fa-lg"></i>
                 </a>
             </li>
             <li class="navi__btn">
@@ -93,7 +64,6 @@
             </li>
            <li class="navi__btn">
                <a class="navi__link" href="more.html">
-                   <span class="navi__point"></span>
                    <i class="fas fa-ellipsis-h fa-lg"></i>
                 </a>
             </li>

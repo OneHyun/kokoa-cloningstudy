@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKoa - Musics Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- sound -->
+    <audio id='audio_play' src='./resource/dig/sounds/dig_mainbgm.mp3'></audio> 
+    <script type="text/javascript"> 
+    function playMusic() { 
+    var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+    } 
+} 
+</script>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--To Do : Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span id="clock">18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <!-- Battery Icon-->
+            <i class="fas fa-bolt"></i>
+            <!-- Lightning Icon-->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Music List</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="music-screen__header">
+            <img src="./resource/dig/cover_img/dig_theme_bg-small.png" class="music-screen__img">
+            <h4>Digimon Theme</h4>
+            <h6>Anime Ost</h6>
+            <div class="music-screen__btns">
+                <button>Shuffle</button>
+                <button>
+                    <i class="fas fa-heart fa-xs">
+                    </i>
+                    <span>212,971</span>
+                </button>
+            </div>
+        </div>
+        <ul class="music-listbox">
+            <li class="music-listbox__item">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_power.png">
+                <div class="music-listbox__title">
+                    <span>power-digimon</span>
+                    <span>내일을 찾아</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+
+            <li class="music-listbox__item music-listbox__itme--selected">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_adventure.png">
+                <div class="music-listbox__title">
+                    <span>digimon-adventure</span>
+                    <span>butter-fly</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+
+            <li class="music-listbox__item">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_tamers.png">
+                <div class="music-listbox__title">
+                    <span>digimon-tamers</span>
+                    <span>gallop</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+
+            <li class="music-listbox__item">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_frontier.png">
+                <div class="music-listbox__title">
+                    <span>digimon-frontier</span>
+                    <span>the frontier</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+
+            <li class="music-listbox__item">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_adventure.png">
+                <div class="music-listbox__title">
+                    <span>digimon-adventure</span>
+                    <span>찾아라 비밀의 열쇠</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+
+            <li class="music-listbox__item">
+                <div class="music-listbox__column">
+                <img src="./resource/dig/cover_img/dig_power.png">
+                <div class="music-listbox__title">
+                    <span>power-digimon</span>
+                    <span>power up</span>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+            </li>
+        </ul>
+    </main>
+
+    <div class="music-controlbox">
+        <div class="current-music__title">
+            <span>digimon-adventure</span>
+            <span>Butter-fly</span>
+        </div>
+        <div class="current-music__icons">
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play" onclick="playMusic()"></i>
+            <i class="fas fa-step-forward"></i>
+        </div>
+    </div>
+
+    <nav class="navi">
+            <ul class="navi__list">
+                <li class="navi__btn">
+                    <a class="navi__link" href="friends.html">
+                     <i class="far fa-user fa-lg"></i>
+                     </a>
+                 </li>
+                <li class="navi__btn">
+                    <a class="navi__link" href="chats.html">
+                        <span class="navi__notification badge">10</span>
+                        <i class="far fa-comment fa-lg"></i>
+                     </a>
+                 </li>
+                 <li class="navi__btn">
+                     <a class="navi__link" href="musics.html">
+                         <span><i class="fas fa-music fa-lg"></i></span>
+                      </a>
+                 </li>
+                <li class="navi__btn">
+                    <a class="navi__link" href="find.html">
+                        <i class="fas fa-search fa-lg"></i>
+                     </a>
+                 </li>
+                <li class="navi__btn">
+                    <a class="navi__link" href="more.html">
+                        <span class="navi__point"></span>
+                        <i class="fas fa-ellipsis-h fa-lg"></i>
+                     </a>
+                 </li>
+            </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+         crossorigin="anonymous">
+   </script>
+   <script>
+       const clock = document.getElementById("clock");
+       function printTime()
+       {
+           const now = new Date();
+           const nowTime = String(now.getHours()).padStart(2,"0") 
+           + ":" + String(now.getMinutes()).padStart(2,"0");
+           clock.innerHTML = nowTime;
+       }
+       printTime();
+       setInterval(printTime, 1000);
+   </script>
+</body>
+</html>

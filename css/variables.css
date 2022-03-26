@@ -2,5 +2,10 @@
     --yellow: #fae100;
     --horizontal-space: 15px;
     --icon-shadow: rgba(4, 10, 34, 0.842)1px 1px 7px;
+    --button-shadow: rgba(4, 10, 34, 0.842)1px 1px 2px;
     --column-boundary: 1px solid rgba(0, 0, 0, 0.4);
+
+    --theme-color: linear-gradient(45deg, #2D82EC, #80DCEE);
+    --theme-color-trans : linear-gradient(to right, #80DCEE 15%, #2D82EC 45%, #80DCEE);
+    --theme-color--not-gradient: #80DCEE;
 }

@@ -6,7 +6,10 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5px 3px;
+
+    background: linear-gradient(to bottom, #80DCEE, #6798BD);
 }
 .status-bar__column{
     width: 33%;
