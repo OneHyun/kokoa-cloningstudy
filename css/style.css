@@ -10,17 +10,22 @@
 @import "components/status-bar.css";
 @import "components/navi-bar.css";
 @import "components/screen-header.css";
+@import "components/alt-screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/anime-component.css";
 @import "components/search-bar.css";
 @import "components/ad-banner.css";
+@import "components/icon-row.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
 @import "screens/music.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 * {
   box-sizing: border-box;
@@ -34,6 +39,6 @@ body {
   }
 
 .main-screen {
-    margin-top: 130px;
+    margin-top: 120px;
     padding: 0px var(--horizontal-space);
 }

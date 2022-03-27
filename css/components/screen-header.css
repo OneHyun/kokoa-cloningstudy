@@ -9,10 +9,6 @@
     box-sizing: border-box;
     top: 38px;
 
-    opacity: 0.9;
-    background-color: #ffe1e2;
-    border: 0px solid var(--theme-color--not-gradient);
-    border-bottom-width: 3px;
 
 }
 .screen-header__title{

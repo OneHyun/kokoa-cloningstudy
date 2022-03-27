@@ -1,6 +1,7 @@
 :root{
     --yellow: #fae100;
     --horizontal-space: 15px;
+    --main-border: 1px solid rgba(0, 0, 0, 0.2);
     --icon-shadow: rgba(4, 10, 34, 0.842)1px 1px 7px;
     --button-shadow: rgba(4, 10, 34, 0.842)1px 1px 2px;
     --column-boundary: 1px solid rgba(0, 0, 0, 0.4);

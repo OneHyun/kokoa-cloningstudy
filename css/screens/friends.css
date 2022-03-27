@@ -1,7 +1,7 @@
 #friends-display-link {
     display: block;
     text-align:center;
-    background-color: #d0fefe;
+    background: #fff0ff;
     margin-top: 105px;
     margin-bottom: 10px;
     padding: 10px 0px;
@@ -29,4 +29,9 @@
     display: flex;
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.5);
+}
+
+
+.friends-screen__channel-header > span{
+  font-size: 17px;
 }

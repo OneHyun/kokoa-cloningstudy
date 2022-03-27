@@ -8,16 +8,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <!-- sound -->
     <audio id='audio_play' src='./resource/dig/sounds/dig_mainbgm.mp3'></audio> 
-    <script type="text/javascript"> 
-    function playMusic() { 
-    var audio = document.getElementById('audio_play'); 
-    if (audio.paused) { 
-        audio.play(); 
-    }else{ 
-        audio.pause(); 
-    } 
-} 
-</script>
+    <script type="text/javascript" src="./js/music.js"></script>
 </head>
 <body>
     <div class="status-bar">
@@ -42,7 +33,9 @@
         <h1 class="screen-header__title">Music List</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span><a href="settings.html">
+                <i class="fas fa-cog fa-lg"></i></a>
+            </span>
         </div>
     </header>
 
@@ -176,17 +169,6 @@
     <script src="https://kit.fontawesome.com/6478f529f2.js"
          crossorigin="anonymous">
    </script>
-   <script>
-       const clock = document.getElementById("clock");
-       function printTime()
-       {
-           const now = new Date();
-           const nowTime = String(now.getHours()).padStart(2,"0") 
-           + ":" + String(now.getMinutes()).padStart(2,"0");
-           clock.innerHTML = nowTime;
-       }
-       printTime();
-       setInterval(printTime, 1000);
-   </script>
+   <script src="./js/clock.js"></script>
 </body>
 </html>

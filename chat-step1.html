@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKoa - Chat_Agumon Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        .alt-header__column,
+        .alt-header__title{
+            font-size: 23px;
+        }
+
+        .main-chat{
+            margin-top: 110px;
+        }
+    </style>
+</head>
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--To Do : Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span id="clock">18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <!-- Battery Icon-->
+            <i class="fas fa-bolt"></i>
+            <!-- Lightning Icon-->
+        </div>
+    </div>
+
+    <img class="background-img" src="./resource/dig/cover_img/dig_terriermon_chatbg.png"/>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="javascript:history.back();">
+                <i class="fas fa-angle-left fa-lg"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">테리어몬</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+    </header>
+    <main class="main-screen main-chat">
+       <div class="chat__timestamp">
+           Tuesday, June 30, 2020
+       </div>
+
+       <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">미안해 테리어몬, 내가...!</span>
+                    <span class="message__time">21:25</span>
+                </div>
+            </div>
+        </div>
+
+       <div class="message-row">
+           <img src="./resource/dig/avatar_icon/dig_terriermon_small.png"/>
+           <div class="message-row__content">
+               <span class="message__author">테리어몬</span>
+               <div class="message__info">
+                   <span class="message__bubble">모만타이</span>
+                   <span class="message__time">21:27</span>
+               </div>
+               <div class="message__info">
+                <span class="message__bubble">그렇게 일일이 생각하지 않아도 되잖아</span>
+                <span class="message__time">21:28</span>
+                </div>
+           </div>
+       </div>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+         crossorigin="anonymous">
+   </script>
+   <script src="./js/clock.js"></script>
+</body>
+</html>

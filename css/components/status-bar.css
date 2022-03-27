@@ -9,7 +9,6 @@
     align-items: center;
     padding: 5px 3px;
 
-    background: linear-gradient(to bottom, #80DCEE, #6798BD);
 }
 .status-bar__column{
     width: 33%;
@@ -23,16 +22,13 @@
 .status-bar__column:nth-child(2){
     display: flex;
     justify-content: center;
-    font-size: 28px;
-    font-family: "NanumPen";
 }
 
 .status-bar__column:last-child{
     display: flex;
     justify-content: end;
     align-items: center;
-    font-size: 28px;
-    font-family: "NanumPen";
+    font-size: 17px;
 }
 
 .status-bar__column .fa-battery-full{
