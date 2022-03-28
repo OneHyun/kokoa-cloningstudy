@@ -38,7 +38,7 @@ body {
     color: #2e363e; 
     background-color: #FFF5FF;
 
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
 .main-screen {

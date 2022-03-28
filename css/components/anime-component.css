@@ -10,10 +10,11 @@
 
 .anime-list{
     background-color: rgb(251, 251, 251);
-    margin-top: -20px;
+    margin-top: 10px;
     padding-left: 30px;
-    padding-top: 50px;
-    height: 100vh;
+    padding-top: 30px;
+    height: 75vh;
+    overflow-y: auto;
 }
 
 .anime-list__category{
@@ -31,6 +32,7 @@
     overflow-y:hidden;
     padding-bottom: 5px;
 }
+
 .anime-component--not-selected::-webkit-scrollbar {
     height: 8px;
     width: 4px;

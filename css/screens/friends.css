@@ -42,7 +42,7 @@
   overflow-x: hidden;
   overflow-y:auto;
   padding-right: 5px;
-
+  height: 400px;
   margin-bottom: 100px;
 }
 .friends-screen__friendlist::-webkit-scrollbar {
