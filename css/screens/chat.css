@@ -8,11 +8,9 @@
     opacity: 0.5;
 }
 
-
 #chat-screen{
-    overflow: hidden;
+    height: 105vh;
 }
-
 #chat-screen .status-bar,
 #chat-screen .alt-header{
     z-index: 1;
