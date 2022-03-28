@@ -17,6 +17,7 @@
 @import "components/search-bar.css";
 @import "components/ad-banner.css";
 @import "components/icon-row.css";
+@import "components/not-suitable.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -36,9 +37,15 @@ body {
     font-size: 20px;
     color: #2e363e; 
     background-color: #FFF5FF;
+
+    overflow-x: hidden;
   }
 
 .main-screen {
     margin-top: 120px;
     padding: 0px var(--horizontal-space);
+}
+
+img{
+  -webkit-user-drag: none;
 }

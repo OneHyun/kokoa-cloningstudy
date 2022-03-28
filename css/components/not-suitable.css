@@ -1,0 +1,22 @@
+#not-suitable {
+    background-color: var(--theme-color--not-gradient);
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    visibility: hidden;
+}
+  
+@media screen and (min-width: 645px)  {
+  #not-suitable {
+    visibility: visible;
+  }
+}
+  

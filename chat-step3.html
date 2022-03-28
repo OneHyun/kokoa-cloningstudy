@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KoKoa - Chat_Agumon Page</title>
+    <title>KoKoa - Chat_Veemon Page</title>
     <link rel="stylesheet" href="css/style.css"/>
     <style>
         .alt-header__column,
@@ -17,8 +17,8 @@
         }
     </style>
 </head>
-<body id="chat-screen" class="agumon-theme">
-    <div class="status-bar agumon-theme">
+<body id="chat-screen" class="veemon-theme">
+    <div class="status-bar veemon-theme">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
@@ -36,15 +36,15 @@
         </div>
     </div>
 
-    <img class="background-img" src="./resource/dig/cover_img/dig_chatbg_agumon.png"/>
-    <header class="alt-header agumon-theme">
+    <img class="background-img" src="./resource/dig/cover_img/dig_chatbg_veemon.png"/>
+    <header class="alt-header veemon-theme">
         <div class="alt-header__column">
             <a href="javascript:history.back();">
                 <i class="fas fa-angle-left fa-lg"></i>
             </a>
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__title">아구몬</h1>
+            <h1 class="alt-header__title">브이몬</h1>
         </div>
         <div class="alt-header__column">
             <span><i class="fas fa-search"></i></span>
@@ -57,51 +57,56 @@
        </div>
 
        <div class="message-row">
-           <img src="./resource/dig/avatar_icon/dig_agumon_small.png"/>
+           <img src="./resource/dig/avatar_icon/dig_veemon_small.png"/>
            <div class="message-row__content">
-               <span class="message__author">아구몬</span>
+               <span class="message__author">브이몬</span>
                <div class="message__info">
-                   <span class="message__bubble">함께하며 괴로운 일도 여러가지 많았어</span>
-                   <span class="message__time">21:27</span>
+                   <span class="message__bubble">자랑은 아니지만, 나는 먹고, 자고, 놀고<br/>
+                    너네들과 즐겁게 지내는게 최고야</span>
+                   <span class="message__time">20:39</span>
                </div>
-               <div class="message__info">
-                <span class="message__bubble">하지만 그만큼 즐거운 일도 많았어</span>
-                <span class="message__time">21:28</span>
-                </div>
            </div>
        </div>
 
-       <div class="message-row message-row--own">
+       <div class="message-row">
+            <img src="./resource/dig/avatar_icon/dig_veemon_small.png"/>
             <div class="message-row__content">
+                <span class="message__author">브이몬</span>
                 <div class="message__info">
-                    <span class="message__bubble">아구몬..</span>
-                    <span class="message__time">21:28</span>
+                    <span class="message__bubble">하지만 그렇다고 해서 뒹굴거리는건 아니야</span>
+                    <span class="message__time">20:40</span>
                 </div>
             </div>
         </div>
-
         <div class="message-row">
-            <img src="./resource/dig/avatar_icon/dig_agumon_small.png"/>
+            <img src="./resource/dig/avatar_icon/dig_veemon_small.png"/>
             <div class="message-row__content">
-                <span class="message__author">아구몬</span>
+                <span class="message__author">브이몬</span>
                 <div class="message__info">
-                    <span class="message__bubble">그렇게 여러가지 일을 경험해 왔으니까</span>
-                    <span class="message__time">21:29</span>
+                    <span class="message__bubble">먹을 때도, 잘 때도, 놀 때도<br/>
+                        대충은 안 해. 전력을 다한다구</span>
+                    <span class="message__time">20:41</span>
+                </div>
+                <div class="message__info">
+                    <span class="message__bubble">그러니까 즐거운거야, 그러니까 매일매일에 충실해 !
+                        </span>
+                    <span class="message__time">20:41</span>
                 </div>
             </div>
         </div>
 
-        <div class="message-row">
-            <img src="./resource/dig/avatar_icon/dig_agumon_small.png"/>
+        <div class="message-row message-row--own">
             <div class="message-row__content">
-                <span class="message__author">아구몬</span>
                 <div class="message__info">
-                    <span class="message__bubble">현재의 우리가 있는거야 !</span>
-                    <span class="message__time">21:30</span>
+                    <img class="message__sendimg" src="./resource/dig/cover_img/dig_blackwar_meme-chat.png">
+                    <span class="message__time">20:42</span>
+                </div>
+                <div class="message__info">
+                    <span class="message__bubble">난 나보다 약한 자의 말을 듣지 않는다</span>
+                    <span class="message__time">20:42</span>
                 </div>
             </div>
         </div>
-
     </main>
     <form class="reply">
         <div class="reply__column">
@@ -110,12 +115,12 @@
         <div class="reply__column">
             <input type="text" placeholder="Write a message" />
             <i class="far fa-smile-wink"></i>
-            <button class="reply__button agumon-theme">
+            <button class="reply__button veemon-theme">
               <i class="fas fa-arrow-up"></i>
             </button>
         </div>
     </form>
-
+    
     <div id="not-suitable">
         <img src="./resource/dig/cover_img/dig_sizepage_cover.png"/>
         <span>Your screen is too big !</span>

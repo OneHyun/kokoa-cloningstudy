@@ -5,7 +5,8 @@
     align-items: center;
 
     box-sizing: border-box;
-    bottom: -20px;
+
+    margin-top: 20px;
 }
 .ad-banner__bg{
     width: 100%;
